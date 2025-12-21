@@ -1,5 +1,5 @@
 {
-  "name": "daniel-martin-portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.0.3",
+    "framer-motion": "^12.23.26",
+    "lucide-react": "^0.554.0",
+    "next": "^16.1.0",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "simplex-noise": "^4.0.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
