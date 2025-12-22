@@ -11,7 +11,7 @@ var projects = [
     thumbnail: "/img/libra.png",
     name: "Libra",
     description: "AI debate mediator that checks for false information and fallacies",
-    tools: ["SKLearn", "MCP", "Agents", "Flask"],
+    tools: ["SKLearn", "MCP", "Flask", "Snowflake"],
     github: "https://github.com/RealDniel/libra",
     demo: "https://youtu.be/IwSIi-H4tg0"
   },
