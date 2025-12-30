@@ -28,6 +28,10 @@
     @apply text-3xl text-neutral-300 font-light max-w-xl;
   }
 
+  .hero-subtitle {
+    @apply text-2xl text-neutral-300 font-light max-w-xl;
+  }
+
   .about-text {
     @apply text-2xl text-neutral-300 font-light;
   }
