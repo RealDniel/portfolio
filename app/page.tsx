@@ -28,7 +28,7 @@ export default function Home() {
             quality="100" 
             height="300" 
             width="300" 
-            className="glow-pulse border-2 border-emerald-900 rounded-full object-cover shadow-xl transition-all duration-500 mb-8"
+            className="glow-green border-2 border-emerald-900 rounded-full object-cover shadow-xl transition-all duration-500 mb-8"
           />
           <h1 className="hero-text transition-all duration-500">Daniel Martin</h1>
           <h2 className="text-2xl font-bold transition-all mb-8 duration-500">CS Student Based in Oregon</h2>
@@ -111,56 +111,6 @@ export default function Home() {
       {/* EXPERIENCE */}
       <div id="experience" className="pt-50 w-full transition-all duration-500">
         <ExperienceTimeline />
-      </div>
-
-      {/* CONTACT */}
-      <div id="contact" className="w-full py-80 bg-gradient-to-b from-emerald-950 to-black text-white flex justify-center transition-all duration-500">
-        <div className="flex flex-col justify-center max-w-3xl w-full px-6 text-center">
-
-          <h2 className="hero-text mb-10 transition-all duration-500">Contact</h2>
-          <p className="text-neutral-300 mb-12 subhero-text mx-auto transition-all duration-500">
-            Want to collaborate, chat about AI, or talk about opportunities?  
-            I’m always happy to connect.
-          </p>
-
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-
-            {/* Email */}
-            
-            <div className="w-full sm:w-1/3 p-6 rounded-2xl border border-emerald-900 bg-black/40 backdrop-blur-md text-center transition-all duration-300 hover:bg-emerald-900/20 hover:scale-105">
-            <a 
-              href="mailto:martid24@oregonstate.edu" 
-            >
-              <h3 className="text-xl font-semibold mb-2">Email</h3>
-              <p className="text-neutral-300 text-sm">martid24@oregonstate.edu</p>
-            </a>
-            </div>
-
-            {/* GitHub */}
-            <div className="w-full sm:w-1/3 p-6 rounded-2xl border border-emerald-900 bg-black/40 backdrop-blur-md text-center transition-all duration-300 hover:bg-emerald-900/20 hover:scale-105">
-            <a 
-              href="https://github.com/RealDniel" 
-              target="_blank"
-            >
-              <h3 className="text-xl font-semibold mb-2">GitHub</h3>
-              <p className="text-neutral-300 text-sm">RealDniel</p>
-            </a>
-            </div>
-
-            {/* LinkedIn */}
-            <div className="w-full sm:w-1/3 p-6 rounded-2xl border border-emerald-900 bg-black/40 backdrop-blur-md text-center transition-all duration-300 hover:bg-emerald-900/20 hover:scale-105">
-            <a 
-              href="https://www.linkedin.com/in/martid24/" 
-              target="_blank"
-            >
-              <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
-              <p className="text-neutral-300 text-sm">@martid24</p>
-            </a>
-            </div>
-
-
-          </div>
-        </div>
       </div>
 
       {/* FOOTER */}

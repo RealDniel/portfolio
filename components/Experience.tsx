@@ -16,7 +16,7 @@ export default function ExperienceTimeline() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="w-full py-20 bg-gradient-to-b from-black to-emerald-950 text-white">
+    <div className="w-full py-20 bg-black text-white">
       <h2 className="text-center hero-text">Experience</h2>
 
       <div className="relative mt-20 max-w-5xl mx-auto">

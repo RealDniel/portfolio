@@ -11,7 +11,6 @@ export default function Navbar() {
                     <li><a href="#container" className="link-text">About</a></li>
                     <li><a href="#projects" className="link-text">Projects</a></li>
                     <li><a href="#experience" className="link-text">Experience</a></li>
-                    <li><a href="#contact" className="link-text">Contact</a></li>
                     <li><a href="/Daniel Martin Resume.pdf" download className="link-text border border-emerald-600 px-3 py-1 rounded-full hover:bg-emerald-700/40 transition">Resume</a></li>
                 </ul>
             </div>

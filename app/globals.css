@@ -36,8 +36,8 @@
     @apply text-2xl text-neutral-300 font-light;
   }
 
-  .glow-pulse {
-    animation: pulse-glow 2.5s infinite;
+  .glow-green {
+    box-shadow: 0 0 25px rgba(16,185,129,0.6);
   }
 
   .logo-text {
@@ -48,18 +48,6 @@
     @apply text-xl font-bold;
   }
 }
-
-/* Slow spin animation */
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 25px rgba(16,185,129,0.6);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(16,185,129,0.9);
-  }
-}
-
-
 
 body {
   background: var(--background);
