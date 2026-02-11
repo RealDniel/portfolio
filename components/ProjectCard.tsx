@@ -19,7 +19,7 @@ export default function ProjectCard({
   demo,
 }:ProjectCardProps) {
     return(
-        <div className="w-80 h-120 p-5 bg-gradient-to-b from-emerald-900 to-black rounded-4xl border border-emerald-900 flex flex-col justify-between">
+        <div className="w-80 h-120 p-5 card-styling flex flex-col justify-between">
             
             <div className="flex flex-col gap-4 flex-grow">
                 {/*Thumbnail*/}
@@ -34,7 +34,7 @@ export default function ProjectCard({
                 </div>
 
                 {/*Name and Description*/}
-                <div className="pt-2 pb-5 gap-6h-3/12 flex flex-col items-center">
+                <div className="pt-2 pb-5 flex flex-col items-center">
                     <h3 className="text-2xl font-bold">{name}</h3>
                     <p className="text-center">{description}</p>
                 </div>

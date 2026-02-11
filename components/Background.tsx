@@ -10,9 +10,9 @@ const zIncrement = 0.001;
 const size = 25;
 const noiseScale = 0.08;
 
-const particleSpeed = 8;
-const numParticles = 20000;
-const particleSize = 1;
+const particleSpeed = 10;
+const numParticles = 35000;
+const particleSize = 0.75;
 const baseHue = 140; // emerald-ish
 
 export default function Background() {
@@ -100,7 +100,6 @@ export default function Background() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 w-full h-full pointer-events-none"
-    />
+      className="fixed inset-0 w-full h-full pointer-events-none -z-10" />
   );
 }

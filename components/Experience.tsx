@@ -16,13 +16,11 @@ export default function ExperienceTimeline() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="w-full py-20 bg-black text-white">
+    <div className="w-full py-20 text-white">
       <h2 className="text-center hero-text">Experience</h2>
 
       <div className="relative mt-20 max-w-5xl mx-auto">
         
-        {/* Center Vertical Line */}
-        <div className="absolute left-1/2 top-0 w-1 h-full bg-emerald-800/40 -translate-x-1/2"></div>
 
         <div className="flex flex-col gap-20">
           {experienceData.map((item, i) => {
@@ -31,16 +29,13 @@ export default function ExperienceTimeline() {
 
             return (
               <div key={i} className="relative flex w-full">
-                {/* Dot */}
-                <div className="absolute left-1/2 w-6 h-6 bg-emerald-700 border-2 border-emerald-400 rounded-full -translate-x-1/2"></div>
 
                 {/* Card */}
                 <div
                     className={`
-                        w-[45%] p-6 rounded-2xl border border-emerald-900 
+                        w-[100%] p-6 rounded-2xl border border-emerald-900 
                         bg-black/40 backdrop-blur-lg
-                        transition-all duration-300 text-left
-                        ${isLeft ? "ml-0 mr-auto" : "ml-auto mr-0"}
+                        transition-all duration-300 text-left left-[30%]
                     `}
                 >
                   <div

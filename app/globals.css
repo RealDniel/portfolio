@@ -47,6 +47,22 @@
   .link-text {
     @apply text-xl font-bold;
   }
+
+  .card-styling {
+    @apply bg-gradient-to-b from-emerald-900 to-black rounded-4xl border border-emerald-900;
+  }
+
+  .menu-styling {
+    @apply bg-black rounded-4xl border border-emerald-900;
+  }
+
+  .menu-li-styling {
+    @apply w-full text-center py-5 hover:text-emerald-700 transition;
+  }
+
+  .coming-soon-text {
+    @apply text-gray-500
+  }
 }
 
 body {

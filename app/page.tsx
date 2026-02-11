@@ -11,15 +11,11 @@ import Reveal from "@/components/Reveal";
 export default function Home() {
   var [showAll, setShowAll] = useState(false);
   return (
-    <div id="container" className="pt-15 min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black transition-colors duration-500">
+    <div id="container" className="pt-15 min-h-screen items-center justify-center font-sans transition-colors duration-500">
 
       {/* HERO */}
       <div id="hero" className="relative flex flex-row min-h-screen w-full items-center justify-center px-6 pb-20 gap-6 text-white transition-all duration-500 overflow-hidden">
         <Background />
-        {/* Top fade */}
-        <div className="pointer-events-none absolute top-0 left-0 w-full h-10 bg-gradient-to-t from-transparent to-black z-5"/>
-        {/* Fade to black at bottom */}
-        <div className="pointer-events-none absolute bottom-0 left-0 w-full h-20 bg-gradient-to-b from-transparent to-black z-5"/>
 
         <div className="z-10 flex flex-col h-full w-1/2 items-center justify-center text-white gap-2 transition-all duration-500">
           <Image 
@@ -31,7 +27,7 @@ export default function Home() {
             className="glow-green border-2 border-emerald-900 rounded-full object-cover shadow-xl transition-all duration-500 mb-8"
           />
           <h1 className="hero-text transition-all duration-500">Daniel Martin</h1>
-          <h2 className="text-2xl font-bold transition-all mb-8 duration-500">CS Student Based in Oregon</h2>
+          <h2 className="text-2xl tracking-wide transition-all mb-8 duration-500">CS Student Based in Oregon</h2>
           <a href="#projects" className="border border-emerald-600 px-3 py-1 rounded-full hover:bg-emerald-700/40 transition">Projects</a>
         </div>
 
@@ -41,7 +37,7 @@ export default function Home() {
             My name is Daniel Martin, and I am a second year Computer Science major at Oregon State University, focusing in Artificial Intelligence. 
             I have made a habit of pursuing opportunities beyond my degree requirements, including leadership with the AI club @ OSU, teaching students 
             as an undergraduate learning assistant for Intro to Computer Science, and involving myself in undergraduate AI research. I've spent many 
-            hours building out cool projects (either personal, professional, or for hackathons), and have grown to love the software development process. 
+            hours building out cool projects (personal, professional, hackathons, etc.), and have grown to love the software development process. 
             I'm always looking for new opportunities and connections, so feel free to reach out!
           </p>
 
@@ -91,11 +87,18 @@ export default function Home() {
           id="project-container" 
           className="mt-10 flex flex-wrap items-center mx-auto flex-row gap-10 justify-center max-w-[1200px] transition-all duration-500"
         >
-          {(showAll ? projects : projects.slice(0, 4)).map((project, i) => (
-              <Reveal key={i} delay={0.1 * i}>
+        {/*Featured*/}
+        {projects.slice(0, 4).map((project, i) => (
+              <Reveal key={project.name} delay={0.1 * i}>
               <ProjectCard {...project} />
               </Reveal>
           ))}
+        {/*Rest*/}
+        {showAll && projects.slice(4).map((project) => (
+          <ProjectCard key={project.name} {...project}/>
+        ))
+        }
+        
         </div>
 
         <div className="flex justify-center mt-10">
@@ -109,7 +112,7 @@ export default function Home() {
       </div>
 
       {/* EXPERIENCE */}
-      <div id="experience" className="pt-50 w-full transition-all duration-500">
+      <div id="experience" className="pt-20 w-full transition-all duration-500">
         <ExperienceTimeline />
       </div>
 
